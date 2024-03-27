@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 50px;
+    }
+     
+    .weather-info {
+      font-size: 18px;
+    }
+
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+
+        <div class="card p-3">
+          <h1 class="text-center mb-4">Weather App</h1>
+          <div class="d-flex mb-3">
+            <input type="text" class="form-control me-3" id="city-name" placeholder="Enter City Name">
+            <button class="btn btn-primary  w-25" id="search-button">Search</button>
+          </div>
+        <!-- <div class="card-header">
+
+        </div> -->
+        <div class="card-body">
+          <h4 class="">Note:if site is not working go to <a href="https://www.weatherapi.com">weather website </a> and update the key </h4>
+          <br>
+          <br>
+          <div id="weather-info" class="d-none">
+            <div class="weather-info">
+              <p><strong>Location:</strong> <span id="city"></span>, <span id="region"></span>, <span id="country"></span></p>
+              <p><strong>Time Zone:</strong> <span id="time-zone"></span></p>
+              <p><strong>Local Time:</strong> <span id="local-time"></span></p>
+              <p><strong>Coordinates:</strong> <span id="latitude"></span>, <span id="longitude"></span></p>
+              <p><strong>Temperature:</strong> <span id="temperature_f"></span>°F</p>
+              <p><strong>Condition:</strong> <span id="condition"></span></p> 
+              <p><strong>Wind Speed:</strong> <span id="wind_mph"></span> MPH</p>
+              <p><strong>Humidity:</strong> <span id="humidity"></span>%</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+        
+
+
+
+
+        <!-- <div class="weather-card">
+         
+         
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="src/script.js"></script>
+</body>
+</html>
